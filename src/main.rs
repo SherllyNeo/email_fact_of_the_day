@@ -13,7 +13,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let email = env::var("EMAIL").unwrap();
     let app_pass = env::var("EMAIL_PASS").unwrap();
 
-    let mailing_list: Vec<&str> = vec![&email,"jacobp.willo@gmail.com","npdugdill@outlook.com","Charly.gormley@gmail.com","adrian@ppxconsulting.co.uk"]; /* Has to be valid emails  */
+    let mailing_list: Vec<&str> = vec![&email]; /* Has to be valid emails  */
 
 
     /* For each subscribe it will make credentials, log in and send the email fact and grab a random fact. This means that every user will get a random fact */
